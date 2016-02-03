@@ -1,0 +1,18 @@
+﻿<!doctype html>
+<html ng-app>
+<head>
+    <script src="http://code.angularjs.org/1.1.4/angular.min.js"></script>
+    <script src="ScopesScript.js"></script>
+    <link href="ScopesStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div ng-controller="GreetCtrl">
+        Hello {{name}}!
+    </div>
+    <div ng-controller="ListCtrl">
+        <ol>
+            <li ng-repeat="name in names">{{name}}</li>
+        </ol>
+    </div>
+</body>
+</html>
